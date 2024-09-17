@@ -1,0 +1,84 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Courier New', Courier, monospace;
+    
+}
+.input-field{
+    width: -webkit-fill-available;
+}
+body{
+    padding: 0 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: brown;
+}
+.wrapper{
+    width: 700px;
+    padding: 40px;
+    background: #ffff;
+    border-radius: 10px;
+    box-shadow: 0 10px 15px rgba(0,0, 0, 5);
+}
+.wrappr.content-box{
+padding: 13px 20px 0;
+border-radius: 10px;
+border: 1px solid #bfbfbf;
+}
+.content-box .content{
+    display: flex;
+    margin-top: 20px;
+    padding: 12px 0;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    border-top: 1px solid #bfbfbf;
+}
+.content-box .result-details{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: calc(100% - 140px);
+
+}
+.result-details li{
+    display: flex;
+    height: 20px;
+    list-style: none;
+    align-content: center;
+}
+.content button{
+    outline: none;
+    border: none;
+    background: rgb(210, 127, 11);
+    color: #232020;
+    padding: auto;
+    font-size: 17px;
+    font-weight: 900;
+    cursor: pointer;
+    border-radius: 4px;
+    width: 100px;
+    transition: transform 0.3s ease;
+}
+.content button:active{
+    transform: scale(0.97);
+}
+.typing-text p span{
+    position: relative;
+
+}
+.typing-text p span.active{
+    color: orange;
+    
+}
+.typing-text p span.correct{
+    color: green;
+    
+}
+.typing-text p span.incorrect{
+    color: red;
+    
+}
